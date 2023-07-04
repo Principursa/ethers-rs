@@ -17,7 +17,7 @@ To set up a new project with ethers-rs, you will need to install the Rust progra
     [dependencies]
     ethers = "2.0"
     # Ethers' async features rely upon the Tokio async runtime.
-    tokio = { version = "1", features = ["macros"] }
+    tokio = { version = "1", features = ["macros","rt-multi-thread"] }
     # Flexible concrete Error Reporting type built on std::error::Error with customizable Reports
     eyre = "0.6"
     ```
